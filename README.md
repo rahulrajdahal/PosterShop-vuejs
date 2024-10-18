@@ -1,61 +1,87 @@
-# postershop
+# [PosterShop](https://github.com/rahulrajdahal/PosterShop-vuejs). View and buy posters online
 
-This template should help get you started developing with Vue 3 in Vite.
+Buy movie posters.
 
-## Recommended IDE Setup
+- All movie posters
+- Buy posters.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Preview
 
-## Type Support for `.vue` Imports in TS
+[![PosterShop](./screenshots/home.png)](https://github.com/rahulrajdahal/PosterShop-vuejs)
+![PosterShop](./screenshots/cart.png)
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+## 🏗 Development Guide
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
+### 1. clone the repository
 
 ```sh
-yarn
+git clone https://github.com/rahulrajdahal/PosterShop-vuejs.git
 ```
 
-### Compile and Hot-Reload for Development
+### 2. Install Dependencies
+
+#### npm
 
 ```sh
-yarn dev
+cd PosterShop-vuejs && npm install
 ```
 
-### Type-Check, Compile and Minify for Production
+### 3. Update Environment Variables
+
+- Copy **.env.example** file.
+- Update the environment variables.
+
+### 4. Run development server
 
 ```sh
-yarn build
+npm run dev
 ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+#### OR
+
+### Run Production server
 
 ```sh
-yarn test:unit
+npm run start
 ```
 
-### Run End-to-End Tests with [Nightwatch](https://nightwatchjs.org/)
+## 🚀 Project Structure
 
-```sh
-# When using CI, the project must be built first.
-yarn build
+Inside of project [PosterShop](https://github.com/rahulrajdahal/PosterShop-vuejs), you'll see the following folders and files:
 
-# Runs the end-to-end tests
-yarn test:e2e
-# Runs the tests only on Chrome
-yarn test:e2e --env chrome
-# Runs the tests of a specific file
-yarn test:e2e tests/e2e/example.ts
-# Runs the tests in debug mode
-yarn test:e2e --debug
+```text
+/
+├── public/
+│   └── favicon.svg
+├── src/
+|   ├── assets/
+│   │   │── logo.svg
+│   │   └── main.css
+|   ├── components/
+│   │   └── Component.vue
+|   ├── router/
+│   │   └── index.ts
+|   ├── stores/
+│   │   └── store.ts
+|   ├── views/
+│   │   └── View.vue
+|   ├── App.vue
+|   ├── main.ts
+├── .env.example
+├── index.html
+├── tailwind.config.js
+├── README.md
+└── package.json
 ```
-    
-### Lint with [ESLint](https://eslint.org/)
 
-```sh
-yarn lint
-```
+## 🧞 Commands
+
+All commands are run from the root of the project, from a terminal:
+
+| Command           | Action                                        |
+| :---------------- | :-------------------------------------------- |
+| `npm install`     | Installs dependencies.                        |
+| `npm run dev`     | Starts local dev server at `localhost:5173`.  |
+| `npm run build`   | Build your production site to `./dist/`.      |
+| `npm run preview` | Preview your build locally, before deploying. |
+| `npm run lint`    | Check all linting errors.                     |
