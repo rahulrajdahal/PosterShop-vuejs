@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@tanstack/vue-query": "^5.59.13",
+    "@vue-stripe/vue-stripe": "^4.5.0",
     "meistericons-vue-latest": "^0.0.2",
     "pinia": "^2.2.4",
     "vue": "^3.5.12",
